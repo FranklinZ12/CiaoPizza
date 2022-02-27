@@ -1,0 +1,8 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FranklinZ12/CioPizza.git",
+  "author": "FranklinZ12 <franklinq8@gmail.com>",
+  "license": "MIT"
+}
