@@ -35,3 +35,9 @@
   letter-spacing: 2px;
   color: var(--fondo);
 }
+
+.separacion{
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
