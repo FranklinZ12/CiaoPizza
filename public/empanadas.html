@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/empanadas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>CiaoPizza</title>
 </head>
@@ -68,47 +69,64 @@
         </div>
     </aside>
     <section>
-        <div>
-            <div>
-                <img src="image/oferta.png">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            <div>
-                <img src="image/oferta2.png">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="image/oferta.png" class="d-block w-100" alt="First slide">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="image/oferta2.png" class="d-block w-100" alt="Second slide">
+              </div>
             </div>
-        </div>
-        <a>
-            <span> </span>
-            <span>Previous</span>
-        </a>
-        <a>
-            <span> </span>
-            <span>Next</span>
-        </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
-    <div>
-        <img src="image/empanada_atun.jpg">
-        <div>
-            <h5>Atun</h5>
-            <p>Empanada rellena de un delicioso atun.</p>
-            <button href="">Agregar al carrito</button>
-        </div>
-    </div>
-    <div>
-        <img src="image/empanada_carne.jpg">
-        <div>
-            <h5>Carne</h5>
-            <p>Empanada rellena de pequeños trozos de carne.</p>
-            <button href="">agregar al carrito</button>
-        </div>
-    </div>
-    <div>
-        <img src="image/empanada_jamonyqueso.jpg">
-        <div>
-            <h5>Jamon y Queso</h5>
-            <p>Empanada rellena de jamon y queso derretido.</p>
-            <button href="">agregar al carrito</button>
+
+    <div class="container">
+        <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card caja" style="width: 18rem">
+                        <img src="image/empanada_atun.jpg" class="card-img-top" alt="atun">
+                        <div class="card-body">
+                            <h5 class="card-title">Atun</h5>
+                            <p class="card-text">Empanada rellena de un delicioso atun.</p>
+                            <button href="#" class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card caja" style="width: 18rem">
+                        <img src="image/empanada_carne.jpg" class="card-img-top" alt="carne">
+                        <div class="card-body">
+                            <h5 class="card-title">Carne</h5>
+                            <p class="card-text">Empanada rellena de pequeños trozos de carne.</p>
+                            <button href="#" class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card caja" style="width: 18rem">
+                        <img src="image/empanada_jamonyqueso.jpg" class="card-img-top" alt="jamon y queso">
+                        <div class="card-body">
+                            <h5 class="card-title">Jamon y Queso</h5>
+                            <p class="card-text">Empanada rellena de jamon y queso derretido.</p>
+                            <button href="#" class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
