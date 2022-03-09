@@ -11,3 +11,27 @@
   scroll-behavior: smooth;
   user-select: none;
 }
+
+:root{
+  --fondo: #ffffff;
+  --texto: #2E2C36;
+  --verde-btn-confirm: #29D884;
+  --naranja:#ff441f;
+}
+
+.btn-agregar{
+background-color: var(--fondo);
+border-radius: 8px;
+border: 2px solid var(--naranja);
+padding: 6px 10px;
+letter-spacing: 2px;
+color: var(--naranja);
+}
+
+.btn-agregar:hover{
+background-color: var(--naranja);
+border-radius: 8px;
+padding: 6px 10px;
+letter-spacing: 2px;
+color: var(--fondo);
+}
