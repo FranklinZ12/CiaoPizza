@@ -5,69 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/perfil.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>CiaoPizza</title>
 </head>
 
 <body>
-    <aside>
-
-        <a>
-            <img src="./image/logo.jpg" height="32" width="40">
-            <span>CiaoPizza</span>
-        </a>
-        <hr>
-        <ul>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-food-menu icon'></i>
+            <div class="logo_name">CiaoPizza</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <hr />
+        <ul class="nav-list">
             <li>
-                <a>
-                    <i></i>
-                    Perfil
+                <a href="#" class="active">
+                    <i class='bx bxs-user'></i>
+                    <span class="links_name">Perfil</span>
                 </a>
+                <span class="tooltip">Perfil</span>
             </li>
             <li>
-                <a>
-                    <i></i>
-                    Pizzas
+                <a href="pizzas.html">
+                    <i class='bx bxs-pizza'></i>
+                    <span class="links_name">Pizzas</span>
                 </a>
+                <span class="tooltip">Pizzas</span>
             </li>
             <li>
-                <a>
-                    <i></i>
-                    Empanadas
+                <a href="empanadas.html">
+                    <i class='bx bx-moon'></i>
+                    <span class="links_name">Empanadas</span>
                 </a>
+                <span class="tooltip">Empanadas</span>
             </li>
             <li>
-                <a>
-                    <i></i>
-                    Postres
+                <a href="postres.html">
+                    <i class='bx bx-cookie'></i>
+                    <span class="links_name">Postres</span>
                 </a>
+                <span class="tooltip">Postres</span>
             </li>
             <li>
-                <a>
-                    <i></i>
-                    Bebidas
+                <a href="bebidas.html">
+                    <i class='bx bx-beer'></i>
+                    <span class="links_name">Bebidas</span>
                 </a>
+                <span class="tooltip">Bebidas</span>
             </li>
             <li>
-                <a>
-                    <i></i>
-                    Tu pedido
+                <a href="pedido.html" class="car">
+                    <i class='bx bx-cart-alt'></i>
+                </a>
+                <span class="tooltip">Pedidos</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="image/gente.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Franklin</div>
+                    </div>
+                </div>
+                <a href="/public/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
                 </a>
             </li>
         </ul>
-        <hr>
-        <div>
-            <ul>
-                <li>
-                    <a>
-                        <i></i>
-                        Cerrar sesión
-                    </a>
-                </li>
-            </ul>
+    </div>
+    <section class="home-section">
+        <div class="text">
+            <h1>Perfil publico</h1>
         </div>
-    </aside>
-    <section>
-        <h1>Perfil publico</h1>
         <form>
             <div>
                 <input type="file" name="foto" />
@@ -88,5 +98,6 @@
         </form>
     </section>
 </body>
+<script src="scripts/sidebar.js"></script>
 
 </html>

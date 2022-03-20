@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  --fondo: #ffffff;
-  --texto: #2E2C36;
-  --verde-btn-confirm: #29D884;
-  --naranja:#ff441f;
-  --menu:#676669;
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -219,24 +211,6 @@
     display: none;
   }
 }
-
-.btn-agregar{
-background-color: var(--fondo);
-border-radius: 8px;
-border: 2px solid var(--naranja);
-padding: 6px 10px;
-letter-spacing: 2px;
-color: var(--naranja);
-}
-
-.btn-agregar:hover{
-background-color: var(--naranja);
-border-radius: 8px;
-padding: 6px 10px;
-letter-spacing: 2px;
-color: var(--fondo);
-}
-
 .home-section{
   position: relative;
   background: #f0f0f07a;
@@ -258,6 +232,6 @@ color: var(--fondo);
   color: #11101d;
   font-size: 25px;
   font-weight: 500;
-  margin: 18px;
+  margin: 18px
 }
 
