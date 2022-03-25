@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin:0; 
+  padding:0;
+  box-sizing: border-box;
+  outline: none; 
+  border:none;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+:root {
+    --fondo: #ffffff;
+    --texto: #2E2C36;
+    --verde-btn-confirm: #29D884;
+    --naranja:#ff441f;
+}
+
+.headerLogin{
+  position: fixed;
+}
+
+.button{
+  background-color: var(--naranja);
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  color: var(--fondo);
+}
+
+.button:hover{
+  background-color: var(--fondo);
+  border: 2px solid var(--naranja);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  color: var(--naranja);
+}
+
+.arrow{
+  color: var(--naranja);
+}
+
+body a{
+  text-decoration: none;
+}
+
+.formFooter a{
+  color: var(--naranja);
+}
