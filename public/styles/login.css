@@ -19,3 +19,34 @@
     --naranja:#ff441f;
 }
 
+.headerIndex{
+  position: fixed;
+}
+
+.button{
+  background-color: var(--naranja);
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  color: var(--fondo);
+}
+
+.button:hover{
+  background-color: var(--fondo);
+  border: 2px solid var(--naranja);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  color: var(--naranja);
+}
+
+.arrow{
+  color: var(--naranja);
+}
+
+body a{
+  text-decoration: none;
+}
+
+.formFooter a {
+  color: var(--naranja);
+}
