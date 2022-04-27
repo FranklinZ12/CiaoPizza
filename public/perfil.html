@@ -76,28 +76,50 @@
     </div>
     <section class="home-section">
         <div class="text">
-            <h1>Perfil publico</h1>
+            <h1>Perfil</h1>
         </div>
-        <form>
-            <div>
-                <input type="file" name="foto" />
 
-                <input type="text" name="nombre" />
-
-                <input type="text" name="apellido" />
-
-                <input type="text" name="ciudad" placeholder="Ciudad" />
-
-                <input type="text" name="barrio" placeholder="Barrio" />
-
-                <input type="text" name="telefono" placeholder="Telefono" />
-
-                <input type="text" name="direccion" placeholder="Dirección" />
-            </div>
-            <button type="button" aria-label="Editar perfil">Guardar cambios</button>
-        </form>
+        <div class="account-box">
+                <form>
+                    <strong>Informacion de tu cuenta</strong>
+                    <fieldset>
+                        <label for="profile-first-name">Foto</label>
+                        <input type="file" id="profile-first-name" name="foto" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-last-name">Nombre(s)</label>
+                        <input type="text" id="profile-last-name" name="nombre" minlength="3" maxlength="25" />
+                    </fieldset>
+                    <fieldset>
+                        <label>Apellido(s)</label>
+                        <input type="text" name="apellido" minlength="3" maxlength="25" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-email">Correo</label>
+                        <input type="email" id="profile-email" name="correo" minlength="3" maxlength="25" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-city">Ciudad</label>
+                        <input type="text" id="profile-city" name="ciudad"/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-barrio">Barrio</label>
+                        <input type="text" id="profile-barrio" name="barrio"/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-adress">Direccion</label>
+                        <input type="text" id="profile-adress" name="direccion"/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="profile-phone">Telefono</label>
+                        <input type="text" id="profile-phone" name="telefono"/>
+                    </fieldset>
+                    <div class="cont-submit">
+                        <button type="button" aria-label="Editar perfil">Guardar cambios</button>
+                    </div>
+                </form>
+        </div>
     </section>
 </body>
-<script src="scripts/sidebar.js"></script>
 
 </html>
