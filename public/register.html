@@ -30,22 +30,22 @@
                             </h3>
                             <form>
                                 <div class="form-outline mb-4">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Nombre"
+                                    <input type="text" id="name" class="form-control form-control-lg" placeholder="Nombre"
                                         required />
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Apellido"
+                                    <input type="text" id="surname" class="form-control form-control-lg" placeholder="Apellido"
                                         required />
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Email"
+                                    <input type="correo" id="email" class="form-control form-control-lg" placeholder="Correo"
                                         required />
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="password" class="form-control form-control-lg" placeholder="Password"
+                                    <input type="contraseña" id="password" class="form-control form-control-lg" placeholder="Contraseña"
                                         required />
                                 </div>
-                                <button class="button" type="submit">Registrarse</button>
+                                <button class="button" onclick="captura()" type="submit">Registrarse</button>
                                 <hr class="my-4">
                             </form>
                             <div class="formFooter">
@@ -62,5 +62,5 @@
     </section>
 </body>
 <script src="https://kit.fontawesome.com/497e5218a3.js" crossorigin="anonymous"></script>
-
+<script src="./scripts/register.js"></script>
 </html>
