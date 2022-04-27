@@ -1,12 +1,12 @@
-const formularioRegistro = () => {
-
-    const registerForm = document.getElementById('register-Form');
-    registerForm.onsubmit = (e) => {
+const dateForm = () => {
+    const form = document.querySelector('#registerForm')
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const nombre = document.getElementById('nombre').value;
-        const apellido = document.getElementById('apellido').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        console.table(nombre, apellido, email, password);
-    }
-};
+        const data = Object.fromEntries(
+            new FormData(e.target)
+        );
+        console.log(JSON.stringify(data));
+        form.reset();
+    });
+}
+
