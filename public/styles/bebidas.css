@@ -5,3 +5,27 @@
   --naranja:#ff441f;
   --menu:#676669;
 }
+
+.home-section {
+  padding: 0;
+}
+
+.card-body button {
+  background-color: var(--naranja);
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  color: var(--fondo);
+}
+
+.card-body button:hover {
+  background-color: var(--fondo);
+  border: 2px solid var(--naranja);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  color: var(--naranja);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

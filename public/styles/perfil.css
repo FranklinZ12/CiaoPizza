@@ -2,6 +2,124 @@
   --fondo: #ffffff;
   --texto: #2E2C36;
   --verde-btn-confirm: #29D884;
-  --naranja:#ff441f;
-  --menu:#676669;
+  --naranja: #ff441f;
+  --menu: #676669;
+}
+
+body {
+  background-color: #fafaf8;
+}
+
+.home-section {
+  padding: 0;
+}
+
+.account-box {
+  background-color: var(--fondo);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 32px 32px -10px rgb(112 105 103 / 9%),
+    0 16px 16px -10px rgb(112 105 103 / 7%),
+    0 8px 8px -10px rgb(112 105 103 / 4%),
+    0 4px 4px -10px rgb(112 105 103 / 2%),
+    0 2px 4px -10px rgb(112 105 103 / 1%);
+  width: 100%;
+
+}
+
+form {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 100%;
+}
+
+strong {
+  color: #332927;
+  font-family: Poppins-SemiBold,
+    Helvetica,
+    Arial,
+    sans-serif;
+  margin-bottom: 25px;
+  padding: 0 10px;
+  display: block;
+}
+
+fieldset {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+fieldset label {
+  display: block;
+  color: #c7c7c7;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+fieldset input {
+  width: 100%;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e5edef;
+  box-sizing: border-box;
+  outline: none;
+  /* border-color: var(--verde-btn-confirm); */
+}
+
+input[type="text"] {
+  appearance: none;
+}
+
+input {
+  color: var(--naranja);
+  text-shadow: 0 0 0 #000;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cont-submit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+.cont-submit button {
+  background-color: var(--verde-btn-confirm);
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  color: var(--fondo);
+  margin: 10px 10px 10px 0;
+  font-weight: 600;
+  min-width: 165px;
+  padding: 8.5px 14px;
+  cursor: pointer;
+}
+
+.cont-submit button:hover {
+  background-color: var(--fondo);
+  border: 2px solid var(--verde-btn-confirm);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  color: var(--verde-btn-confirm);
 }

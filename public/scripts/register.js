@@ -1,10 +1,12 @@
-function captura(){
-    var nombreUsuario=document.getElementById("name").value;
-    var apellidoUsuario=document.getElementById("surname").value;
-    var correoUsuario=document.getElementById("email").value;
-    var contraseñaUsuario=document.getElementById("password").value;
-    alert(nombreUsuario); 
-    alert(apellidoUsuario); 
-    alert(correoUsuario); 
-    alert(contraseñaUsuario);
+const dateForm = () => {
+    const form = document.querySelector('#registerForm')
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = Object.fromEntries(
+            new FormData(e.target)
+        );
+        console.log(JSON.stringify(data));
+        form.reset();
+    });
 }
+
