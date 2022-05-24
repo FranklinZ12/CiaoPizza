@@ -15,7 +15,7 @@ const dateForm = () => {
         }).then(response => response.json())
             .then(data => {
                 if (data.ok) {
-                    window.location.href = '/public/perfil.html'
+                    window.location.href = '/perfil.html'
                 } else {
                     alert('Error, usuario no existente')
                     form.reset();

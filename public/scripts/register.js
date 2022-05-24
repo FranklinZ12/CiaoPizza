@@ -16,7 +16,7 @@ const dateForm = () => {
                 localStorage.setItem('token', data.token);
                 if (data.ok) {
                     alert('Usuario creado correctamente')
-                    window.location.href = '/public/perfil.html'
+                    window.location.href = '/perfil.html'
                 } else {
                     alert(data.msg)
                     form.reset();
