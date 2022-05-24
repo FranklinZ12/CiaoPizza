@@ -5,8 +5,23 @@ const dateForm = () => {
         const data = Object.fromEntries(
             new FormData(e.target)
         );
-        console.log(JSON.stringify(data));
-        form.reset();
+        fetch('http://localhost:4000/api/auth/new', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        }).then(response => response.json())
+            .then(data => {
+                localStorage.setItem('token', data.token);
+                if (data.ok) {
+                    alert('Usuario creado correctamente')
+                    window.location.href = '/public/perfil.html'
+                } else {
+                    alert(data.msg)
+                    form.reset();
+                }
+            })
     });
 }
 
