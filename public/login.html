@@ -29,14 +29,14 @@
                         </h3>
                         <form>
                             <div class="form-outline mb-4">
-                                <input type="correo" class="form-control form-control-lg" placeholder="correo"
+                                <input type="correo"  id="email" class="form-control form-control-lg" placeholder="Correo"
                                     required />
                             </div>
                             <div class="form-outline mb-4">
-                                <input type="contraseña" class="form-control form-control-lg" placeholder="contraseña"
+                                <input type="contraseña" id="password" class="form-control form-control-lg" placeholder="Contraseña"
                                     required />
                             </div>
-                            <button class="button" type="submit">Iniciar sesión</button>
+                            <button class="button" onclick="captura()" type="submit">Iniciar sesión</button>
                             <hr class="my-4">
                         </form>
                         <div class="formFooter">
@@ -52,5 +52,6 @@
     </div>
 </body>
 <script src="https://kit.fontawesome.com/497e5218a3.js" crossorigin="anonymous"></script>
+<script src="./scripts/login.js"></script>
 
 </html>

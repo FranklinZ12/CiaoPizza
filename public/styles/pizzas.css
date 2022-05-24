@@ -219,23 +219,6 @@
   }
 }
 
-.btn-agregar{
-  background-color: var(--fondo);
-  border-radius: 8px;
-  border: 2px solid var(--naranja);
-  padding: 6px 10px;
-  letter-spacing: 2px;
-  color: var(--naranja);
-}
-
-.btn-agregar:hover{
-  background-color: var(--naranja);
-  border-radius: 8px;
-  padding: 6px 10px;
-  letter-spacing: 2px;
-  color: var(--fondo);
-}
-
 .home-section{
   position: relative;
   background: #f0f0f07a;
@@ -260,4 +243,22 @@
   margin: 18px;
 }
 
+.card-body button{
+  background-color: var(--naranja);
+  border-radius: 8px;
+  padding: 6px 10px;
+  letter-spacing: 2px;
+  color: var(--fondo);
+}
 
+.card-body button:hover{
+  background-color: var(--fondo);
+  border: 2px solid var(--naranja);
+  border-radius: 8px;
+  letter-spacing: 2px;
+  color: var(--naranja);
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
